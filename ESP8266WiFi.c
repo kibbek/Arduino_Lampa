@@ -87,7 +87,7 @@ void loop() {
         Time = millis();
         String msgString;
         if(senseMode==0) msgString = "Off"; else msgString = "On";
-        client.publish("/Lampa/Stan/Raport", String(msgString).c_str(), true); 
+        client.publish("Lampa/Stan/Raport", String(msgString).c_str(), true); 
       }
 }
 
